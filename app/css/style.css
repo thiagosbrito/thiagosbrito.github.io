@@ -1,0 +1,492 @@
+/* Custom Stylesheet */
+/**
+ *
+ * Made By Joash Pereira
+ * Thanks for MaterializeCSS.com
+ */
+
+.default_color{background-color: #2196F3 !important}
+
+.default_color_text{color: #2196F3 !important}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+#intro, #work, #team {padding-top: 4rem; position: relative;}
+
+#work {
+    min-height: 991px;
+}
+#intro {background-color: }
+#index-banner {
+    min-height: 632px;
+    max-height: 928px;
+    position: relative;
+    /*background-color: #2196F3;*/
+    background-image: none !important;
+    background-size: cover;
+    margin-top: -64px;
+
+}
+
+#nav_f{
+    box-shadow: none !important; 
+    -webkit-box-shadow:none !important;
+}
+
+.text_h {
+    padding: 25% 0;
+    font-size: 6.0em;
+    font-weight: 100;
+    color:white;
+}
+
+.brand-logo{
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.5rem !important;
+    font-style: normal;
+    font-weight: 100;
+    padding: 0;
+    letter-spacing: 0px;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 600;
+}
+.brand-logo span {
+    font-weight: 300;
+    margin-left: 0;
+    font-size: 1.5rem;
+}
+
+.text_h2 {font-weight: 100;margin-bottom: 4%; line-height: 4.5rem;}
+
+.span_h2 {font-weight: 300;color: #2196F3;}
+
+.text_b{color: #2196F3;}
+
+.in{font-weight: 400 !important; font-style: normal !important;}
+
+.promo i {
+    color: #2196F3;
+    font-size: 7rem;
+    display: block;
+}
+.card-content a {color: #2196F3;}
+
+.card-content a:hover {color: #2196F3;}
+
+#work, #team{background: rgb(247, 247, 247);}
+
+.text_pink{color:#EF9A9A;}
+
+nav ul a {
+    font-size: 1.2rem !important;
+    color: rgba(0,0,0,0.35);
+    letter-spacing: 0.35px !important;
+    display: block;
+    font-weight: 300;
+    padding: 0px 15px;
+}
+
+nav ul a::before {
+    color: #fff;
+    content: attr(data-hover);
+    position: absolute;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+nav ul a:hover::before,
+nav ul a:focus::before {
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.cd-headline.type .cd-words-wrapper {
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.cd-headline.type .cd-words-wrapper::after {
+    /* vertical bar */
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 90%;
+    width: 1px;
+    background-color: #aebcb9;
+}
+
+.cd-headline.type .cd-words-wrapper.waiting::after {
+    -webkit-animation: cd-pulse 1s infinite;
+    -moz-animation: cd-pulse 1s infinite;
+    animation: cd-pulse 1s infinite;
+}
+.cd-headline.type .cd-words-wrapper.selected {
+    background-color: #FFF;
+}
+
+.cd-headline.type .cd-words-wrapper.selected::after {
+    visibility: hidden;
+}
+
+.cd-headline.type .cd-words-wrapper.selected b {
+    color: #2196F3;
+}
+
+.cd-headline.type b {
+    visibility: hidden;
+}
+
+.cd-headline.type b.is-visible {
+    visibility: visible;
+}
+
+.cd-headline.type i {
+    position: absolute;
+    visibility: hidden;
+}
+.cd-headline.type i.in {
+    position: relative;
+    visibility: visible;
+}
+
+@-webkit-keyframes cd-pulse {
+    0% {
+        -webkit-transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translateY(-50%) scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(-50%) scale(0);
+        opacity: 0;
+    }
+}
+@-moz-keyframes cd-pulse {
+    0% {
+        -moz-transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+    40% {
+        -moz-transform: translateY(-50%) scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        -moz-transform: translateY(-50%) scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes cd-pulse {
+    0% {
+        -webkit-transform: translateY(-50%) scale(1);
+        -moz-transform: translateY(-50%) scale(1);
+        -ms-transform: translateY(-50%) scale(1);
+        -o-transform: translateY(-50%) scale(1);
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translateY(-50%) scale(0.9);
+        -moz-transform: translateY(-50%) scale(0.9);
+        -ms-transform: translateY(-50%) scale(0.9);
+        -o-transform: translateY(-50%) scale(0.9);
+        transform: translateY(-50%) scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(-50%) scale(0);
+        -moz-transform: translateY(-50%) scale(0);
+        -ms-transform: translateY(-50%) scale(0);
+        -o-transform: translateY(-50%) scale(0);
+        transform: translateY(-50%) scale(0);
+        opacity: 0;
+    }
+}
+
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:1200; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/status.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+@media only screen and (max-width: 480px) {
+    .text_h {
+        padding: 4% 0;
+        font-size: 5em;
+        font-weight: 100;
+        color: white;
+        margin-top: 230px;
+    }
+}
+
+input, textarea {
+    border-bottom: 1px solid #fff;
+}
+
+nav a.button-collapse {
+    left: -25px;
+}
+
+.card-avatar .waves-effect {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-avatar img {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+}
+
+.card-avatar .card-content {
+    text-align: center;
+}
+
+.card .card-content p {
+    margin: 15px 0px;
+}
+
+.card-avatar .card-content i {
+   font-size: 1.5rem;
+}
+
+.card-avatar .card-content .card-title {
+    line-height: 30px !important;
+}
+
+.parallax-container {
+    max-height: 400px;
+}
+
+footer.page-footer {
+    margin-top: 0px !important;
+}
+header #nav_f{
+    background-color: transparent !important;
+}
+header.smaller #nav_f {
+    background-color: rgba(255,255,255,0.65) !important;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35) !important
+}
+header.smaller .brand-logo {
+    color: #2196F3 !important;
+}
+header.smaller #nav_f ul li a {
+    color: rgba(0,0,0,0.35) !important;
+}
+header.smaller #nav_f ul li a::before {
+    color: #2196F3 !important;
+}
+
+header.smaller #nav_f ul li a:hover::before,
+header.smaller #nav_f ul li a:focus::before {
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+
+header * {
+    transition: all .25 ease;
+}
+
+video#homevideo {
+  position: fixed; right: 0; top: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url('../img/badges/saopaulo.jpg') no-repeat;
+  background-size: cover;
+}
+.portfolio-holder {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    z-index: 0;
+}
+.portfolio-holder .card {
+    width: 16.66%;
+    height: 240px;
+    float: left;
+    margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .portfolio-holder .card {
+        width: 100% !important;
+        height: 250px !important;
+        border-bottom: 3px solid #2196F3;
+        margin-bottom: 3px
+    }
+}
+@media only screen and (max-width: 640px) {
+    .portfolio-holder .card {
+        width: 25%;
+        height: 160px;
+    }
+}
+
+.portfolio-holder .card .card-content {
+    display: none;
+}
+
+.hover-effect a {
+    color: rgba(0,0,0,0.2);
+    font-weight: 700;
+    text-shadow: none;
+}
+
+.hover-effect a::before {
+    color: #fff;
+    content: attr(data-hover);
+    position: absolute;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.hover-effect a:hover::before,
+.hover-effect a:focus::before {
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+
+
+.grid {
+    max-width: 1920px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+
+.grid li {
+    display: inline-block;
+    width: 287.5px;
+    height: 288px;
+    margin: 0;
+    text-align: left;
+    position: relative;
+    float: left;
+}
+
+.grid figure {
+    margin: 0;
+    position: relative;
+}
+
+.grid figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+
+.grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0px 0 10px;
+    background: #2196F3 !important;
+    color: #033862 !important;
+    line-height: 15px !important;
+}
+
+.grid figcaption h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 1.85rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+.grid figcaption p {
+    margin-top: -5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.cs-style-3 figure {
+    overflow: hidden;
+}
+
+.cs-style-3 figure img {
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.no-touch .cs-style-3 figure:hover img,
+.cs-style-3 figure.cs-hover img {
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+
+.cs-style-3 figcaption {
+    height: 100px;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-3 figcaption a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-md {
+    width: 190px;
+    height: 190px;
+}
